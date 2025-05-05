@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitBtn = document.getElementById("submitBtn");
     const toneSelect = document.getElementById("toneSelect");
     //keys
-    const API_KEY = "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";  // Replace with your OpenAI API key
-    const ASSISTANT_ID = "asst_xkx7mmDZtEMyJ1dZqS8QZ93j";
+    // Replace with your OpenAI API key
     let threadId = null; 
 
     async function fetchResponse(url, options) {
@@ -207,6 +206,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 });
-
 
 
