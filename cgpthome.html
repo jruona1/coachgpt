@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach GPT Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cgptstyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <img src="cgptlogo.png" alt="Coach GPT Logo" class="menu-logo">
+            <div class="menu-title">Coach GPT</div>
+            <nav>
+                <ul class="nav-list">
+                  <li><a class="nav-link" href="cgpthome.html">Home</a></li>
+                  <li><a class="nav-link" href="cgptabout.html">About</a></li>
+                  <li><a class="nav-link" href="cgptcontact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>      
+    <main>
+        <div class="text-box-container">
+          <div class="dropdown-container">
+            <label for="toneSelect">Tone:</label>
+            <select id="toneSelect">
+              <option value="friendly" selected>Friendly</option>
+              <option value="angry">Angry</option>
+              <option value="condescending">Condescending</option>
+              <option value="Dejected">Dejected</option>
+              <option value="Motivational">Motivational</option>
+              <option value="Chill">Chill</option>
+            </select>
+          </div>
+      
+          <textarea id="inputBox" placeholder="Talk to coach here..."></textarea>
+          <button id="submitBtn">Submit</button>
+      
+        
+          <div id="loadingWrapper" style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
+            <div id="loadingAnimation" class="loading-track" style="display: none;">
+              <div class="runner">🏃‍♂️</div>
+            </div>
+            <p id="loadingText" style="display: none; font-weight: bold; color: #007bff;">Loading...</p>
+          </div>
+        </div>
+        <div id="responseArea" style="margin-top: 40px;"></div>
+      </main>
+    <script src="cgptjs.js"></script>
+</body>
+</html>
