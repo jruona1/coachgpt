@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitBtn = document.getElementById("submitBtn");
     const toneSelect = document.getElementById("toneSelect");
     //keys
-    const API_KEY = "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";  // Replace with your OpenAI API key
+    const API_KEY = "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";  // Replace with your OpenAI API key
     const ASSISTANT_ID = "asst_xkx7mmDZtEMyJ1dZqS8QZ93j";
     let threadId = null; 
 
